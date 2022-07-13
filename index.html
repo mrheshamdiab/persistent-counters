@@ -1,0 +1,147 @@
+<html>
+<head>
+<style>
+.button {
+  background-color: #0000ff;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer; 
+ 
+}
+
+.button:active {
+  background-color: #009dcf;
+  box-shadow: 0 5px #aaaaaa;
+  transform: translateY(2px);
+}
+
+.roundbtn {
+height: 150px;
+width: 150px;
+border-radius: 50%;
+align: center;
+}
+
+.div1{
+height: 220px;
+width: 220px;
+border: 2px solid blue;
+}
+
+.counter-header{
+height: 50px;
+width: 220px;
+text-align: center;
+font-size: 25px;
+background-color: #dddddd
+
+}
+
+</style>
+
+<script type="text/javascript">
+  var suclicks = 0;
+  var asclicks = 0;
+    function addsuClicks() {
+        suclicks += 1;
+		document.getElementById("subtn").innerHTML = suclicks;
+    }
+	function addasClicks() {
+        asclicks += 1;
+		
+        document.getElementById("asbtn").innerHTML = asclicks;
+    }
+	function sureset(){
+	if (confirm("are you sure you want to reset سبحان الله counter?") == true) {
+    suclicks = 0;
+	document.getElementById("subtn").innerHTML = suclicks;
+	}
+	}
+	function asreset(){
+	if (confirm("are you sure you want to reset استغفر الله counter?") == true) {
+    asclicks = 0;
+	document.getElementById("asbtn").innerHTML = asclicks;
+	}
+	}
+	function resetall(){
+	if (confirm("are you sure you want to reset all counters?") == true) {
+    asclicks = 0;
+	suclicks = 0;
+	document.getElementById("subtn").innerHTML = suclicks;
+	document.getElementById("asbtn").innerHTML = asclicks;
+	}
+	}
+	function onpageclose(){
+	localStorage.setItem("as", asclicks);
+	localStorage.setItem("su", suclicks);
+	}
+	function onpageload(){
+	if (localStorage.getItem("as") == null || localStorage.getItem("su") == null){
+	suclicks = 0;
+    asclicks = 0;
+	document.getElementById("asbtn").innerHTML = asclicks;
+	document.getElementById("subtn").innerHTML = suclicks;
+	}
+	else{
+	document.getElementById("asbtn").innerHTML = localStorage.getItem("as");
+	document.getElementById("subtn").innerHTML = localStorage.getItem("su");
+	suclicks = parseInt(localStorage.getItem("su"));
+    asclicks = parseInt(localStorage.getItem("as"));
+	}
+	}
+
+</script>
+</head>
+<body onload="onpageload()" onunload="onpageclose()">
+
+<h1 align="center">e-masba7a</h1>
+<button id="resetall" type="button" onClick="resetall()">Reset all counters</button>
+
+<br>
+<br>
+<div class="div1" align="center">
+	<div class="counter-header">سبحان الله</div>
+		<button class="button roundbtn" id="subtn" type="button" onClick="addsuClicks()">0</button>
+		<image src="https://www.linkpicture.com/q/reset.jpg" height="50px" width="50px" align="right" id="suresetbtn" onClick="sureset()"></image>
+</div>
+<br>
+<div class="div1" align="center">
+	<div class="counter-header">استغفر الله</div>
+		<button class="button roundbtn" id="asbtn" type="button" onClick="addasClicks()">0</button>
+		<image src="https://www.linkpicture.com/q/reset.jpg" height="50px" width="50px" align="right" id="asresetbtn" onClick="asreset()"></image>
+</div>
+
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyB3ej5MvXcyWC7ZxU1K8UXZgX3hh4gpLMI",
+    authDomain: "persistent-counters.firebaseapp.com",
+    projectId: "persistent-counters",
+    storageBucket: "persistent-counters.appspot.com",
+    messagingSenderId: "897811001418",
+    appId: "1:897811001418:web:d0e3746d50c2cbe0ca36b3",
+    measurementId: "G-GG2JY5MC5M"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+</body>
+</html>
