@@ -1,98 +1,78 @@
 <html>
 <head>
-<style>
-.button {
-  background-color: #0000ff;
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-  margin: 4px 2px;
-  cursor: pointer; 
- 
-}
-
-.button:active {
-  background-color: #009dcf;
-  box-shadow: 0 5px #aaaaaa;
-  transform: translateY(2px);
-}
-
-.roundbtn {
-height: 150px;
-width: 150px;
-border-radius: 50%;
-align: center;
-}
-
-.div1{
-height: 220px;
-width: 220px;
-border: 2px solid blue;
-}
-
-.counter-header{
-height: 50px;
-width: 220px;
-text-align: center;
-font-size: 25px;
-background-color: #dddddd
-
-}
-
-</style>
+<link rel="stylesheet" href="index.css">
 
 <script type="text/javascript">
-  var suclicks = 0;
-  var asclicks = 0;
-    function addsuClicks() {
-        suclicks += 1;
-		document.getElementById("subtn").innerHTML = suclicks;
-    }
-	function addasClicks() {
-        asclicks += 1;
-		
-        document.getElementById("asbtn").innerHTML = asclicks;
-    }
-	function sureset(){
-	if (confirm("are you sure you want to reset سبحان الله counter?") == true) {
-    suclicks = 0;
-	document.getElementById("subtn").innerHTML = suclicks;
-	}
-	}
-	function asreset(){
-	if (confirm("are you sure you want to reset استغفر الله counter?") == true) {
-    asclicks = 0;
-	document.getElementById("asbtn").innerHTML = asclicks;
-	}
-	}
+  var aclicks = 0, bclicks = 0, cclicks = 0, dclicks = 0, eclicks = 0, fclicks = 0, gclicks = 0, hclicks = 0, iclicks = 0, jclicks = 0, kclicks = 0, lclicks = 0, mclicks = 0, nclicks = 0, oclicks = 0, pclicks = 0;
+  
+    function addaclicks() {aclicks += 1; document.getElementById("abtn").innerHTML = aclicks;}
+	function addbclicks() {bclicks += 1; document.getElementById("bbtn").innerHTML = bclicks;}
+	function addcclicks() {cclicks += 1; document.getElementById("cbtn").innerHTML = cclicks;}
+	function adddclicks() {dclicks += 1; document.getElementById("dbtn").innerHTML = dclicks;}
+	function addeclicks() {eclicks += 1; document.getElementById("ebtn").innerHTML = eclicks;}
+	function addfclicks() {fclicks += 1; document.getElementById("fbtn").innerHTML = fclicks;}
+	function addgclicks() {gclicks += 1; document.getElementById("gbtn").innerHTML = gclicks;}
+	function addhclicks() {hclicks += 1; document.getElementById("hbtn").innerHTML = hclicks;}
+	function addiclicks() {iclicks += 1; document.getElementById("ibtn").innerHTML = iclicks;}
+	function addjclicks() {jclicks += 1; document.getElementById("jbtn").innerHTML = jclicks;}
+	function addkclicks() {kclicks += 1; document.getElementById("kbtn").innerHTML = kclicks;}
+	function addlclicks() {lclicks += 1; document.getElementById("lbtn").innerHTML = lclicks;}
+	function addmclicks() {mclicks += 1; document.getElementById("mbtn").innerHTML = mclicks;}
+	function addnclicks() {nclicks += 1; document.getElementById("nbtn").innerHTML = nclicks;}
+	function addoclicks() {oclicks += 1; document.getElementById("obtn").innerHTML = oclicks;}
+	function addpclicks() {pclicks += 1; document.getElementById("pbtn").innerHTML = pclicks;}
+	
+	function ar(){aclicks = 0; document.getElementById("abtn").innerHTML = aclicks;}
+	function br(){bclicks = 0; document.getElementById("bbtn").innerHTML = bclicks;}
+	function cr(){cclicks = 0; document.getElementById("cbtn").innerHTML = cclicks;}
+	function dr(){dclicks = 0; document.getElementById("dbtn").innerHTML = dclicks;}
+	function er(){eclicks = 0; document.getElementById("ebtn").innerHTML = eclicks;}
+	function fr(){fclicks = 0; document.getElementById("fbtn").innerHTML = fclicks;}
+	function gr(){gclicks = 0; document.getElementById("gbtn").innerHTML = gclicks;}
+	function hr(){hclicks = 0; document.getElementById("hbtn").innerHTML = hclicks;}
+	function ir(){iclicks = 0; document.getElementById("ibtn").innerHTML = iclicks;}
+	function jr(){jclicks = 0; document.getElementById("jbtn").innerHTML = jclicks;}
+	function kr(){kclicks = 0; document.getElementById("kbtn").innerHTML = kclicks;}
+	function lr(){lclicks = 0; document.getElementById("lbtn").innerHTML = lclicks;}
+	function mr(){mclicks = 0; document.getElementById("mbtn").innerHTML = mclicks;}
+	function nr(){nclicks = 0; document.getElementById("nbtn").innerHTML = nclicks;}
+	function or(){oclicks = 0; document.getElementById("obtn").innerHTML = oclicks;}
+	function pr(){pclicks = 0; document.getElementById("pbtn").innerHTML = pclicks;}
+	
+	function areset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {ar();}}
+	function breset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {br();}}
+	function creset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {cr();}}
+	function dreset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {dr();}}
+	function ereset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {er();}}
+	function freset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {fr();}}
+	function greset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {gr();}}
+	function hreset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {hr();}}
+	function ireset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {ir();}}
+	function jreset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {jr();}}
+	function kreset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {kr();}}
+	function lreset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {lr();}}
+	function mreset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {mr();}}
+	function nreset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {nr();}}
+	function oreset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {or();}}
+	function preset(){if (confirm("هل تريد تصفير هذا العداد؟") == true) {pr();}}
+	
+	
 	function resetall(){
-	if (confirm("are you sure you want to reset all counters?") == true) {
-    asclicks = 0;
-	suclicks = 0;
-	document.getElementById("subtn").innerHTML = suclicks;
-	document.getElementById("asbtn").innerHTML = asclicks;
+	if (confirm("هل تريد تصفير كل العدادات؟") == true) {
+    ar(); br(); cr(); dr(); er(); fr(); gr(); hr(); ir(); jr(); kr(); lr(); mr(); nr(); or(); pr();
 	}
 	}
 	function onpageclose(){
-	localStorage.setItem("as", asclicks);
-	localStorage.setItem("su", suclicks);
+	localStorage.setItem("a", aclicks); localStorage.setItem("b", bclicks); localStorage.setItem("c", cclicks); localStorage.setItem("d", dclicks); localStorage.setItem("e", eclicks); localStorage.setItem("f", fclicks); localStorage.setItem("g", gclicks); localStorage.setItem("h", hclicks); localStorage.setItem("i", iclicks); localStorage.setItem("j", jclicks); localStorage.setItem("k", kclicks); localStorage.setItem("l", lclicks); localStorage.setItem("m", mclicks); localStorage.setItem("n", nclicks); localStorage.setItem("o", oclicks); localStorage.setItem("p", pclicks);
 	}
 	function onpageload(){
-	if (localStorage.getItem("as") == null || localStorage.getItem("su") == null){
-	suclicks = 0;
-    asclicks = 0;
-	document.getElementById("asbtn").innerHTML = asclicks;
-	document.getElementById("subtn").innerHTML = suclicks;
+	if (localStorage.getItem("a") == null){
+	ar(); br(); cr(); dr(); er(); fr(); gr(); hr(); ir(); jr(); kr(); lr(); mr(); nr(); or(); pr();
 	}
 	else{
-	document.getElementById("asbtn").innerHTML = localStorage.getItem("as");
-	document.getElementById("subtn").innerHTML = localStorage.getItem("su");
-	suclicks = parseInt(localStorage.getItem("su"));
-    asclicks = parseInt(localStorage.getItem("as"));
+    document.getElementById("abtn").innerHTML = localStorage.getItem("a"); document.getElementById("bbtn").innerHTML = localStorage.getItem("b"); document.getElementById("cbtn").innerHTML = localStorage.getItem("c"); document.getElementById("dbtn").innerHTML = localStorage.getItem("d"); document.getElementById("ebtn").innerHTML = localStorage.getItem("e"); document.getElementById("fbtn").innerHTML = localStorage.getItem("f"); document.getElementById("gbtn").innerHTML = localStorage.getItem("g"); document.getElementById("hbtn").innerHTML = localStorage.getItem("h"); document.getElementById("ibtn").innerHTML = localStorage.getItem("i"); document.getElementById("jbtn").innerHTML = localStorage.getItem("j"); document.getElementById("kbtn").innerHTML = localStorage.getItem("k"); document.getElementById("lbtn").innerHTML = localStorage.getItem("l"); document.getElementById("mbtn").innerHTML = localStorage.getItem("m"); document.getElementById("nbtn").innerHTML = localStorage.getItem("n"); document.getElementById("obtn").innerHTML = localStorage.getItem("o"); document.getElementById("pbtn").innerHTML = localStorage.getItem("p");
+
+	aclicks = parseInt(localStorage.getItem("a")); bclicks = parseInt(localStorage.getItem("b")); cclicks = parseInt(localStorage.getItem("c")); dclicks = parseInt(localStorage.getItem("d")); eclicks = parseInt(localStorage.getItem("e")); fclicks = parseInt(localStorage.getItem("f")); gclicks = parseInt(localStorage.getItem("g")); hclicks = parseInt(localStorage.getItem("h")); iclicks = parseInt(localStorage.getItem("i")); jclicks = parseInt(localStorage.getItem("j")); kclicks = parseInt(localStorage.getItem("k")); lclicks = parseInt(localStorage.getItem("l")); mclicks = parseInt(localStorage.getItem("m")); nclicks = parseInt(localStorage.getItem("n")); oclicks = parseInt(localStorage.getItem("o")); pclicks = parseInt(localStorage.getItem("p"));	
 	}
 	}
 
@@ -101,23 +81,99 @@ background-color: #dddddd
 <body onload="onpageload()" onunload="onpageclose()">
 
 <h1 align="center">e-masba7a</h1>
-<button id="resetall" type="button" onClick="resetall()">Reset all counters</button>
+<h2 align="center">قم بالضغط على الزر الأزرق لزيادة العداد</h2>
+<h4 align="center">إجعل التسبيح والإستغفار من عاداتك عسى الله أن يكرمنا وإياكم</h4>
+
+<div align="center"><button class="resetallbutton" type="button" onClick="resetall()">تصفير العدادات</button></div>
 
 <br>
-<br>
-<div class="div1" align="center">
-	<div class="counter-header">سبحان الله</div>
-		<button class="button roundbtn" id="subtn" type="button" onClick="addsuClicks()">0</button>
-		<image src="https://www.linkpicture.com/q/reset.jpg" height="50px" width="50px" align="right" id="suresetbtn" onClick="sureset()"></image>
+<div class="row">
+  <div class="column" align="center">
+    <div class="counter-header">سبحان الله</div>
+	<button class="button roundbtn" id="abtn" type="button" onClick="addaclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="areset()" style="cursor:pointer;"></image>
+  </div>
+
+  <div class="column" align="center">
+    <div class="counter-header">استغفر الله</div>
+    <button class="button roundbtn" id="bbtn" type="button" onClick="addbclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="breset()"style="cursor:pointer;"></image>
+  </div>
+
+  <div class="column" align="center">
+    <div class="counter-header">الحمد لله</div>
+    <button class="button roundbtn" id="cbtn" type="button" onClick="addcclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="creset()"style="cursor:pointer;"></image>
+  </div>
+  
+  <div class="column" align="center">
+    <div class="counter-header">لا إله إلا الله</div>
+    <button class="button roundbtn" id="dbtn" type="button" onClick="adddclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="dreset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">الله اكبر</div>
+    <button class="button roundbtn" id="ebtn" type="button" onClick="addeclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="ereset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">رب اغفر لي</div>
+    <button class="button roundbtn" id="fbtn" type="button" onClick="addfclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="freset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">لا حول ولا قوة الا بالله</div>
+    <button class="button roundbtn" id="gbtn" type="button" onClick="addgclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="greset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">اللهمَّ إنك عفوٌّ تُحبُّ العفوَ فاعفُ عنِّي</div>
+    <button class="button roundbtn" id="hbtn" type="button" onClick="addhclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="hreset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">اللهم صل وسلم وبارك على سيدنا محمد</div>
+    <button class="button roundbtn" id="ibtn" type="button" onClick="addiclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="ireset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">سبحان الله وبحمده سبحان الله العظيم</div>
+    <button class="button roundbtn" id="jbtn" type="button" onClick="addjclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="jreset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">سبحان الله والحمد لله ولا إله إلا الله والله أكبر</div>
+    <button class="button roundbtn" id="kbtn" type="button" onClick="addkclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="kreset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">أستغفر الله الذى لا إله إلا هو الحي القيوم وأتوب إليه</div>
+    <button class="button roundbtn" id="lbtn" type="button" onClick="addlclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="lreset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">لا اله الا انت سبحانك إني كنت من الظالمين</div>
+    <button class="button roundbtn" id="mbtn" type="button" onClick="addmclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="mreset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">سبحان الله وبحمده عدد خلقه ورضا نفسه وزنة عرشه ومداد كلماته</div>
+    <button class="button roundbtn" id="nbtn" type="button" onClick="addnclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="nreset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">لا إله إلا الله وحده لا شريك لهُ ، لهُ الملك ، ولهُ الحمدُ ، وهو على كل شيء قديره</div>
+    <button class="button roundbtn" id="obtn" type="button" onClick="addoclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="oreset()"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">حسبي الله ونعم الوكيل</div>
+    <button class="button roundbtn" id="pbtn" type="button" onClick="addpclicks()">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="preset()"style="cursor:pointer;"></image>
+  </div>
 </div>
 <br>
-<div class="div1" align="center">
-	<div class="counter-header">استغفر الله</div>
-		<button class="button roundbtn" id="asbtn" type="button" onClick="addasClicks()">0</button>
-		<image src="https://www.linkpicture.com/q/reset.jpg" height="50px" width="50px" align="right" id="asresetbtn" onClick="asreset()"></image>
-</div>
-
-
+<div align="center"><button class="resetallbutton" type="button" onClick="resetall()">تصفير العدادات</button></div>
 
 <script type="module">
   // Import the functions you need from the SDKs you need
