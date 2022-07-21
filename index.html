@@ -1,0 +1,141 @@
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+
+<script type="text/javascript">
+  const allCounters = document.getElementsByClassName('button roundbtn');
+    function addCounter(element) {
+    document.getElementById(element.id).innerHTML = parseInt(document.getElementById(element.id).innerHTML)+1;
+    };
+	
+	function resetCounter(id) {
+    if (window.confirm("هل تريد تصفير هذا العداد؟")) {
+        document.getElementById(id).innerHTML = 0;
+    }
+}
+	
+	function resetall(){
+	if (confirm("هل تريد تصفير كل العدادات؟") == true) {
+    for (const counter of allCounters) {
+            document.getElementById(counter.id).innerHTML = 0;
+       }
+	}
+	}
+	function loadSavedValues (){
+        if (localStorage.getItem(1) != null){
+        for (const counter of allCounters) {
+            document.getElementById(counter.id).innerHTML = localStorage.getItem(counter.id);
+        }} else{
+          for (const counter of allCounters) {
+            document.getElementById(counter.id).innerHTML = 0;}
+       }
+      
+      }
+
+	function saveCountersValues (){
+        for (const counter of allCounters) {
+            localStorage.setItem(counter.id, document.getElementById(counter.id).innerHTML);
+       }
+       
+      }
+</script>
+</head>
+<body onload="loadSavedValues()" onunload="saveCountersValues()">
+
+<h1 align="center">e-masba7a</h1>
+<h2 align="center">قم بالضغط على الزر الأزرق لزيادة العداد</h2>
+<h4 align="center">إجعل التسبيح والإستغفار من عاداتك عسى الله أن يكرمنا وإياكم</h4>
+
+<div align="center"><button class="resetallbutton" type="button" onClick="resetall()">تصفير العدادات</button></div>
+
+<br>
+<div class="row">
+  <div class="column" align="center">
+    <div class="counter-header">سبحان الله</div>
+	<button class="button roundbtn" id="1" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(1)" style="cursor:pointer;"></image>
+  </div>
+
+  <div class="column" align="center">
+    <div class="counter-header">استغفر الله</div>
+    <button class="button roundbtn" id="2" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(2)"style="cursor:pointer;"></image>
+  </div>
+
+  <div class="column" align="center">
+    <div class="counter-header">الحمد لله</div>
+    <button class="button roundbtn" id="3" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(3)"style="cursor:pointer;"></image>
+  </div>
+  
+  <div class="column" align="center">
+    <div class="counter-header">لا إله إلا الله</div>
+    <button class="button roundbtn" id="4" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(4)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">الله اكبر</div>
+    <button class="button roundbtn" id="5" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(5)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">رب اغفر لي</div>
+    <button class="button roundbtn" id="6" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(6)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">لا حول ولا قوة الا بالله</div>
+    <button class="button roundbtn" id="7" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(7)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">اللهمَّ إنك عفوٌّ تُحبُّ العفوَ فاعفُ عنِّي</div>
+    <button class="button roundbtn" id="8" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(8)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">اللهم صل وسلم وبارك على سيدنا محمد</div>
+    <button class="button roundbtn" id="9" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(9)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">سبحان الله وبحمده سبحان الله العظيم</div>
+    <button class="button roundbtn" id="10" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(10)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">سبحان الله والحمد لله ولا إله إلا الله والله أكبر</div>
+    <button class="button roundbtn" id="11" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(11)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">أستغفر الله الذى لا إله إلا هو الحي القيوم وأتوب إليه</div>
+    <button class="button roundbtn" id="12" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(12)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">لا اله الا انت سبحانك إني كنت من الظالمين</div>
+    <button class="button roundbtn" id="13" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(13)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">سبحان الله وبحمده عدد خلقه ورضا نفسه وزنة عرشه ومداد كلماته</div>
+    <button class="button roundbtn" id="14" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(14)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">لا إله إلا الله وحده لا شريك لهُ ، لهُ الملك ، ولهُ الحمدُ ، وهو على كل شيء قديره</div>
+    <button class="button roundbtn" id="15" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(15)"style="cursor:pointer;"></image>
+  </div>
+  <div class="column" align="center">
+    <div class="counter-header">حسبي الله ونعم الوكيل</div>
+    <button class="button roundbtn" id="16" type="button" onClick="addCounter(this)">0</button>
+	<image src="reset.jpg" height="30px" width="30px" align="right" onClick="resetCounter(16)"style="cursor:pointer;"></image>
+  </div>
+</div>
+<br>
+<div align="center"><button class="resetallbutton" type="button" onClick="resetall()">تصفير العدادات</button></div>
+
+</body>
+</html>
